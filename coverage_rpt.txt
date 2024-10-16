@@ -1,0 +1,683 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\top#DUT /SVA_inst
+=== Design Unit: work.SVA
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      17        17         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\top#DUT /SVA_inst/EMPTY_assertion
+                     verilog_files/SVA.sv(7)            0          1
+/\top#DUT /SVA_inst/ALMOSTEMPTY_assertion
+                     verilog_files/SVA.sv(11)           0          1
+/\top#DUT /SVA_inst/ALMOSTFULL_assertion
+                     verilog_files/SVA.sv(15)           0          1
+/\top#DUT /SVA_inst/FULL_assertion
+                     verilog_files/SVA.sv(19)           0          1
+/\top#DUT /SVA_inst/OVERFLOW_assertion
+                     verilog_files/SVA.sv(83)           0          1
+/\top#DUT /SVA_inst/UNDERFLOW_assertion
+                     verilog_files/SVA.sv(84)           0          1
+/\top#DUT /SVA_inst/WR_ACK_HIGH_assertion
+                     verilog_files/SVA.sv(85)           0          1
+/\top#DUT /SVA_inst/WR_ACK_LOW_assertion
+                     verilog_files/SVA.sv(86)           0          1
+/\top#DUT /SVA_inst/COUNTER_0_assertion
+                     verilog_files/SVA.sv(87)           0          1
+/\top#DUT /SVA_inst/COUNTER_INC_10_assertion
+                     verilog_files/SVA.sv(88)           0          1
+/\top#DUT /SVA_inst/COUNTER_INC_01_assertion
+                     verilog_files/SVA.sv(89)           0          1
+/\top#DUT /SVA_inst/COUNTER_INC_11_WR_assertion
+                     verilog_files/SVA.sv(90)           0          1
+/\top#DUT /SVA_inst/COUNTER_INC_11_RD_assertion
+                     verilog_files/SVA.sv(91)           0          1
+/\top#DUT /SVA_inst/COUNTER_LAT_assertion
+                     verilog_files/SVA.sv(92)           0          1
+/\top#DUT /SVA_inst/PTR_RST_assertion
+                     verilog_files/SVA.sv(93)           0          1
+/\top#DUT /SVA_inst/RD_PTR_assertion
+                     verilog_files/SVA.sv(94)           0          1
+/\top#DUT /SVA_inst/WR_PTR_assertion
+                     verilog_files/SVA.sv(95)           0          1
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         8         8         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\top#DUT /SVA_inst
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File verilog_files/SVA.sv
+------------------------------------IF Branch------------------------------------
+    6                                        818     Count coming in to IF
+    6               1                        360     
+                                             458     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    10                                       818     Count coming in to IF
+    10              1                        367     
+                                             451     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    14                                       818     Count coming in to IF
+    14              1                          5     
+                                             813     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    18                                       818     Count coming in to IF
+    18              1                          3     
+                                             815     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       4         4         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /\top#DUT /SVA_inst --
+
+  File verilog_files/SVA.sv
+----------------Focused Condition View-------------------
+Line       6 Item    1  (fif.count == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+        Input Term   Covered  Reason for no coverage   Hint
+       -----------  --------  -----------------------  --------------
+  (fif.count == 0)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (fif.count == 0)_0    -                             
+  Row   2:          1  (fif.count == 0)_1    -                             
+
+----------------Focused Condition View-------------------
+Line       10 Item    1  (fif.count == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+        Input Term   Covered  Reason for no coverage   Hint
+       -----------  --------  -----------------------  --------------
+  (fif.count == 1)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (fif.count == 1)_0    -                             
+  Row   2:          1  (fif.count == 1)_1    -                             
+
+----------------Focused Condition View-------------------
+Line       14 Item    1  (fif.count == (fif.FIFO_DEPTH - 1))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                           Input Term   Covered  Reason for no coverage   Hint
+                          -----------  --------  -----------------------  --------------
+  (fif.count == (fif.FIFO_DEPTH - 1))         Y
+
+     Rows:       Hits  FEC Target                             Non-masking condition(s)      
+ ---------  ---------  --------------------                   -------------------------     
+  Row   1:          1  (fif.count == (fif.FIFO_DEPTH - 1))_0  -                             
+  Row   2:          1  (fif.count == (fif.FIFO_DEPTH - 1))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       18 Item    1  (fif.count == fif.FIFO_DEPTH)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                     Input Term   Covered  Reason for no coverage   Hint
+                    -----------  --------  -----------------------  --------------
+  (fif.count == fif.FIFO_DEPTH)         Y
+
+     Rows:       Hits  FEC Target                       Non-masking condition(s)      
+ ---------  ---------  --------------------             -------------------------     
+  Row   1:          1  (fif.count == fif.FIFO_DEPTH)_0  -                             
+  Row   2:          1  (fif.count == fif.FIFO_DEPTH)_1  -                             
+
+
+
+Directive Coverage:
+    Directives                      17        17         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\top#DUT /SVA_inst/EMPTY_cover          SVA    Verilog  SVA  verilog_files/SVA.sv(8)
+                                                                               360 Covered   
+/\top#DUT /SVA_inst/ALMOSTEMPTY_cover    SVA    Verilog  SVA  verilog_files/SVA.sv(12)
+                                                                               367 Covered   
+/\top#DUT /SVA_inst/ALMOSTFULL_cover     SVA    Verilog  SVA  verilog_files/SVA.sv(16)
+                                                                                 5 Covered   
+/\top#DUT /SVA_inst/FULL_cover           SVA    Verilog  SVA  verilog_files/SVA.sv(20)
+                                                                                 3 Covered   
+/\top#DUT /SVA_inst/OVERFLOW_cover       SVA    Verilog  SVA  verilog_files/SVA.sv(98)
+                                                                                23 Covered   
+/\top#DUT /SVA_inst/UNDERFLOW_cover      SVA    Verilog  SVA  verilog_files/SVA.sv(99)
+                                                                               185 Covered   
+/\top#DUT /SVA_inst/WR_ACK_HIGH_cover    SVA    Verilog  SVA  verilog_files/SVA.sv(100)
+                                                                               261 Covered   
+/\top#DUT /SVA_inst/WR_ACK_LOW_cover     SVA    Verilog  SVA  verilog_files/SVA.sv(101)
+                                                                                23 Covered   
+/\top#DUT /SVA_inst/COUNTER_0_cover      SVA    Verilog  SVA  verilog_files/SVA.sv(102)
+                                                                              1015 Covered   
+/\top#DUT /SVA_inst/COUNTER_INC_10_cover SVA    Verilog  SVA  verilog_files/SVA.sv(103)
+                                                                               129 Covered   
+/\top#DUT /SVA_inst/COUNTER_INC_01_cover SVA    Verilog  SVA  verilog_files/SVA.sv(104)
+                                                                                46 Covered   
+/\top#DUT /SVA_inst/COUNTER_INC_11_WR_cover 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(105)
+                                                                                96 Covered   
+/\top#DUT /SVA_inst/COUNTER_INC_11_RD_cover 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(106)
+                                                                                 1 Covered   
+/\top#DUT /SVA_inst/COUNTER_LAT_cover    SVA    Verilog  SVA  verilog_files/SVA.sv(107)
+                                                                               111 Covered   
+/\top#DUT /SVA_inst/PTR_RST_cover        SVA    Verilog  SVA  verilog_files/SVA.sv(108)
+                                                                              1015 Covered   
+/\top#DUT /SVA_inst/RD_PTR_cover         SVA    Verilog  SVA  verilog_files/SVA.sv(109)
+                                                                                83 Covered   
+/\top#DUT /SVA_inst/WR_PTR_cover         SVA    Verilog  SVA  verilog_files/SVA.sv(110)
+                                                                               261 Covered   
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\top#DUT /SVA_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File verilog_files/SVA.sv
+    5               1                        818     
+
+=================================================================================
+=== Instance: /\top#DUT 
+=== Design Unit: work.FIFO
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        26        26         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\top#DUT 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File verilog_files/FIFO.sv
+------------------------------------IF Branch------------------------------------
+    48                                      2561     Count coming in to IF
+    48              1                       1518     
+    53              1                        510     
+    59              1                        533     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                       533     Count coming in to IF
+    61              1                         24     
+    63              1                        509     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    70                                      2178     Count coming in to IF
+    70              1                       1262     
+    75              1                        162     
+    81              1                        754     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    82                                       754     Count coming in to IF
+    82              1                        311     
+    85              1                        443     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    92                                      2346     Count coming in to IF
+    92              1                       1392     
+    95              1                        954     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    96                                       954     Count coming in to IF
+    96              1                          2     
+    99              1                        192     
+    102             1                         57     
+    105             1                        247     
+    107             1                         89     
+                                             367     All False Count
+Branch totals: 6 hits of 6 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    112                                      817     Count coming in to IF
+    112             1                          3     
+    112             2                        814     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    113                                      817     Count coming in to IF
+    113             1                        360     
+    113             2                        457     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    114                                      817     Count coming in to IF
+    114             1                          5     
+    114             2                        812     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    115                                      817     Count coming in to IF
+    115             1                        367     
+    115             2                        450     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      28        24         4    85.71%
+
+================================Condition Details================================
+
+Condition Coverage for instance /\top#DUT  --
+
+  File verilog_files/FIFO.sv
+----------------Focused Condition View-------------------
+Line       53 Item    1  (wr_en && (count < fif.FIFO_DEPTH))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+                Input Term   Covered  Reason for no coverage   Hint
+               -----------  --------  -----------------------  --------------
+                     wr_en         Y
+  (count < fif.FIFO_DEPTH)         Y
+
+     Rows:       Hits  FEC Target                  Non-masking condition(s)      
+ ---------  ---------  --------------------        -------------------------     
+  Row   1:          1  wr_en_0                     -                             
+  Row   2:          1  wr_en_1                     (count < fif.FIFO_DEPTH)      
+  Row   3:          1  (count < fif.FIFO_DEPTH)_0  wr_en                         
+  Row   4:          1  (count < fif.FIFO_DEPTH)_1  wr_en                         
+
+----------------Focused Condition View-------------------
+Line       61 Item    1  (full && wr_en)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+        full         Y
+       wr_en         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  full_0                -                             
+  Row   2:          1  full_1                wr_en                         
+  Row   3:          1  wr_en_0               full                          
+  Row   4:          1  wr_en_1               full                          
+
+----------------Focused Condition View-------------------
+Line       75 Item    1  (rd_en && (count != 0))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+    Input Term   Covered  Reason for no coverage   Hint
+   -----------  --------  -----------------------  --------------
+         rd_en         Y
+  (count != 0)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  rd_en_0               -                             
+  Row   2:          1  rd_en_1               (count != 0)                  
+  Row   3:          1  (count != 0)_0        rd_en                         
+  Row   4:          1  (count != 0)_1        rd_en                         
+
+----------------Focused Condition View-------------------
+Line       82 Item    1  (rd_en && empty)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       rd_en         Y
+       empty         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  rd_en_0               -                             
+  Row   2:          1  rd_en_1               empty                         
+  Row   3:    ***0***  empty_0               rd_en                         
+  Row   4:          1  empty_1               rd_en                         
+
+----------------Focused Condition View-------------------
+Line       96 Item    1  ((rd_en && wr_en) && full)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       rd_en         Y
+       wr_en         Y
+        full         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  rd_en_0               -                             
+  Row   2:          1  rd_en_1               (full && wr_en)               
+  Row   3:          1  wr_en_0               rd_en                         
+  Row   4:          1  wr_en_1               (full && rd_en)               
+  Row   5:          1  full_0                (rd_en && wr_en)              
+  Row   6:          1  full_1                (rd_en && wr_en)              
+
+----------------Focused Condition View-------------------
+Line       99 Item    1  ((rd_en && wr_en) && empty)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       rd_en         Y
+       wr_en         Y
+       empty         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  rd_en_0               -                             
+  Row   2:          1  rd_en_1               (empty && wr_en)              
+  Row   3:          1  wr_en_0               rd_en                         
+  Row   4:          1  wr_en_1               (empty && rd_en)              
+  Row   5:          1  empty_0               (rd_en && wr_en)              
+  Row   6:          1  empty_1               (rd_en && wr_en)              
+
+----------------Focused Condition View-------------------
+Line       102 Item    1  (((rd_en && wr_en) && ~full) && ~empty)
+Condition totals: 2 of 4 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       rd_en         Y
+       wr_en         Y
+        full         N  '_1' not hit             Hit '_1'
+       empty         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  rd_en_0               -                             
+  Row   2:          1  rd_en_1               (~empty && ~full && wr_en)    
+  Row   3:          1  wr_en_0               rd_en                         
+  Row   4:          1  wr_en_1               (~empty && ~full && rd_en)    
+  Row   5:          1  full_0                (~empty && (rd_en && wr_en))  
+  Row   6:    ***0***  full_1                (rd_en && wr_en)              
+  Row   7:          1  empty_0               ((rd_en && wr_en) && ~full)   
+  Row   8:    ***0***  empty_1               ((rd_en && wr_en) && ~full)   
+
+----------------Focused Condition View-------------------
+Line       105 Item    1  ((~rd_en && wr_en) && ~full)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       rd_en         Y
+       wr_en         Y
+        full         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  rd_en_0               (~full && wr_en)              
+  Row   2:          1  rd_en_1               -                             
+  Row   3:          1  wr_en_0               ~rd_en                        
+  Row   4:          1  wr_en_1               (~full && ~rd_en)             
+  Row   5:          1  full_0                (~rd_en && wr_en)             
+  Row   6:          1  full_1                (~rd_en && wr_en)             
+
+----------------Focused Condition View-------------------
+Line       107 Item    1  ((rd_en && ~wr_en) && ~empty)
+Condition totals: 2 of 3 input terms covered = 66.66%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       rd_en         Y
+       wr_en         N  '_1' not hit             Hit '_1'
+       empty         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  rd_en_0               -                             
+  Row   2:          1  rd_en_1               (~empty && ~wr_en)            
+  Row   3:          1  wr_en_0               (~empty && rd_en)             
+  Row   4:    ***0***  wr_en_1               rd_en                         
+  Row   5:          1  empty_0               (rd_en && ~wr_en)             
+  Row   6:          1  empty_1               (rd_en && ~wr_en)             
+
+----------------Focused Condition View-------------------
+Line       112 Item    1  (count == fif.FIFO_DEPTH)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  (count == fif.FIFO_DEPTH)         Y
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:          1  (count == fif.FIFO_DEPTH)_0  -                             
+  Row   2:          1  (count == fif.FIFO_DEPTH)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       113 Item    1  (count == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+    Input Term   Covered  Reason for no coverage   Hint
+   -----------  --------  -----------------------  --------------
+  (count == 0)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (count == 0)_0        -                             
+  Row   2:          1  (count == 0)_1        -                             
+
+----------------Focused Condition View-------------------
+Line       114 Item    1  (count == (fif.FIFO_DEPTH - 1))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                       Input Term   Covered  Reason for no coverage   Hint
+                      -----------  --------  -----------------------  --------------
+  (count == (fif.FIFO_DEPTH - 1))         Y
+
+     Rows:       Hits  FEC Target                         Non-masking condition(s)      
+ ---------  ---------  --------------------               -------------------------     
+  Row   1:          1  (count == (fif.FIFO_DEPTH - 1))_0  -                             
+  Row   2:          1  (count == (fif.FIFO_DEPTH - 1))_1  -                             
+
+----------------Focused Condition View-------------------
+Line       115 Item    1  (count == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+    Input Term   Covered  Reason for no coverage   Hint
+   -----------  --------  -----------------------  --------------
+  (count == 1)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (count == 1)_0        -                             
+  Row   2:          1  (count == 1)_1        -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      36        36         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\top#DUT  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File verilog_files/FIFO.sv
+    17              1                       2060     
+    18              1                       4120     
+    19              1                       1004     
+    20              1                       1017     
+    21              1                        989     
+    47              1                       2561     
+    49              1                       1518     
+    50              1                       1518     
+    51              1                       1518     
+    54              1                        510     
+    55              1                        510     
+    56              1                        510     
+    57              1                        510     
+    60              1                        533     
+    62              1                         24     
+    64              1                        509     
+    69              1                       2178     
+    71              1                       1262     
+    72              1                       1262     
+    73              1                       1262     
+    76              1                        162     
+    77              1                        162     
+    78              1                        162     
+    83              1                        311     
+    86              1                        443     
+    91              1                       2346     
+    93              1                       1392     
+    97              1                          2     
+    100             1                        192     
+    103             1                         57     
+    106             1                        247     
+    108             1                         89     
+    112             1                        818     
+    113             1                        818     
+    114             1                        818     
+    115             1                        818     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        106       106         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\top#DUT  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                       almostempty           1           1      100.00 
+                                        almostfull           1           1      100.00 
+                                               clk           1           1      100.00 
+                                        count[3-0]           1           1      100.00 
+                                     data_in[15-0]           1           1      100.00 
+                                    data_out[15-0]           1           1      100.00 
+                                             empty           1           1      100.00 
+                                              full           1           1      100.00 
+                                          overflow           1           1      100.00 
+                                             rd_en           1           1      100.00 
+                                       rd_ptr[2-0]           1           1      100.00 
+                                             rst_n           1           1      100.00 
+                                         underflow           1           1      100.00 
+                                            wr_ack           1           1      100.00 
+                                             wr_en           1           1      100.00 
+                                       wr_ptr[2-0]           1           1      100.00 
+
+Total Node Count     =         53 
+Toggled Node Count   =         53 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (106 of 106 bins)
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\top#DUT /SVA_inst/EMPTY_cover          SVA    Verilog  SVA  verilog_files/SVA.sv(8)
+                                                                               360 Covered   
+/\top#DUT /SVA_inst/ALMOSTEMPTY_cover    SVA    Verilog  SVA  verilog_files/SVA.sv(12)
+                                                                               367 Covered   
+/\top#DUT /SVA_inst/ALMOSTFULL_cover     SVA    Verilog  SVA  verilog_files/SVA.sv(16)
+                                                                                 5 Covered   
+/\top#DUT /SVA_inst/FULL_cover           SVA    Verilog  SVA  verilog_files/SVA.sv(20)
+                                                                                 3 Covered   
+/\top#DUT /SVA_inst/OVERFLOW_cover       SVA    Verilog  SVA  verilog_files/SVA.sv(98)
+                                                                                23 Covered   
+/\top#DUT /SVA_inst/UNDERFLOW_cover      SVA    Verilog  SVA  verilog_files/SVA.sv(99)
+                                                                               185 Covered   
+/\top#DUT /SVA_inst/WR_ACK_HIGH_cover    SVA    Verilog  SVA  verilog_files/SVA.sv(100)
+                                                                               261 Covered   
+/\top#DUT /SVA_inst/WR_ACK_LOW_cover     SVA    Verilog  SVA  verilog_files/SVA.sv(101)
+                                                                                23 Covered   
+/\top#DUT /SVA_inst/COUNTER_0_cover      SVA    Verilog  SVA  verilog_files/SVA.sv(102)
+                                                                              1015 Covered   
+/\top#DUT /SVA_inst/COUNTER_INC_10_cover SVA    Verilog  SVA  verilog_files/SVA.sv(103)
+                                                                               129 Covered   
+/\top#DUT /SVA_inst/COUNTER_INC_01_cover SVA    Verilog  SVA  verilog_files/SVA.sv(104)
+                                                                                46 Covered   
+/\top#DUT /SVA_inst/COUNTER_INC_11_WR_cover 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(105)
+                                                                                96 Covered   
+/\top#DUT /SVA_inst/COUNTER_INC_11_RD_cover 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(106)
+                                                                                 1 Covered   
+/\top#DUT /SVA_inst/COUNTER_LAT_cover    SVA    Verilog  SVA  verilog_files/SVA.sv(107)
+                                                                               111 Covered   
+/\top#DUT /SVA_inst/PTR_RST_cover        SVA    Verilog  SVA  verilog_files/SVA.sv(108)
+                                                                              1015 Covered   
+/\top#DUT /SVA_inst/RD_PTR_cover         SVA    Verilog  SVA  verilog_files/SVA.sv(109)
+                                                                                83 Covered   
+/\top#DUT /SVA_inst/WR_PTR_cover         SVA    Verilog  SVA  verilog_files/SVA.sv(110)
+                                                                               261 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 17
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\top#DUT /SVA_inst/EMPTY_assertion
+                     verilog_files/SVA.sv(7)            0          1
+/\top#DUT /SVA_inst/ALMOSTEMPTY_assertion
+                     verilog_files/SVA.sv(11)           0          1
+/\top#DUT /SVA_inst/ALMOSTFULL_assertion
+                     verilog_files/SVA.sv(15)           0          1
+/\top#DUT /SVA_inst/FULL_assertion
+                     verilog_files/SVA.sv(19)           0          1
+/\top#DUT /SVA_inst/OVERFLOW_assertion
+                     verilog_files/SVA.sv(83)           0          1
+/\top#DUT /SVA_inst/UNDERFLOW_assertion
+                     verilog_files/SVA.sv(84)           0          1
+/\top#DUT /SVA_inst/WR_ACK_HIGH_assertion
+                     verilog_files/SVA.sv(85)           0          1
+/\top#DUT /SVA_inst/WR_ACK_LOW_assertion
+                     verilog_files/SVA.sv(86)           0          1
+/\top#DUT /SVA_inst/COUNTER_0_assertion
+                     verilog_files/SVA.sv(87)           0          1
+/\top#DUT /SVA_inst/COUNTER_INC_10_assertion
+                     verilog_files/SVA.sv(88)           0          1
+/\top#DUT /SVA_inst/COUNTER_INC_01_assertion
+                     verilog_files/SVA.sv(89)           0          1
+/\top#DUT /SVA_inst/COUNTER_INC_11_WR_assertion
+                     verilog_files/SVA.sv(90)           0          1
+/\top#DUT /SVA_inst/COUNTER_INC_11_RD_assertion
+                     verilog_files/SVA.sv(91)           0          1
+/\top#DUT /SVA_inst/COUNTER_LAT_assertion
+                     verilog_files/SVA.sv(92)           0          1
+/\top#DUT /SVA_inst/PTR_RST_assertion
+                     verilog_files/SVA.sv(93)           0          1
+/\top#DUT /SVA_inst/RD_PTR_assertion
+                     verilog_files/SVA.sv(94)           0          1
+/\top#DUT /SVA_inst/WR_PTR_assertion
+                     verilog_files/SVA.sv(95)           0          1
+
+Total Coverage By Instance (filtered view): 97.91%
+

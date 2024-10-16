@@ -1,0 +1,11 @@
+*.docx
+*.xlsx
+work/
+*.cr.mti
+vsim.wlf
+transcript
+FIFO_UVM.mpf
+FIFO_UVM.mpf_new
+*.sv.bak
+*.xml
+wlf*
